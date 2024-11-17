@@ -24,8 +24,18 @@
 	});
 </script>
 
-<div class="space-y-8 p-8 pt-0 -mt-12">
-	<h2 class="m-0">{emergency.name}</h2>
+<div class="-mt-12 space-y-8 p-8 pt-0">
+	<div>
+		<h2 class="m-0 flex items-center gap-2">
+			<img
+				src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Flag_of_the_Valencian_Community_(2x3).svg-RSokIez5hhahiLgSmQD1UKa0WgDLNW.png"
+				alt="valencia flag"
+				class="m-0 w-10"
+			/>
+			{emergency.name}
+		</h2>
+		<div class="text-muted-foreground">Last Updated: 16th November 2024, 10:31am</div>
+	</div>
 	<div class="flex items-center gap-3">
 		<span><img src={emergency.priority} class="m-0 size-6 object-contain" alt="priority" /></span>
 		<span class="flex items-center gap-1">

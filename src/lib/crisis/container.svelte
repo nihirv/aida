@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Emergency } from '$lib/fake-db/db';
-	import { MessageSquare, LayoutDashboard } from 'lucide-svelte';
+	import { MessageSquare, LayoutDashboard, Users, Briefcase } from 'lucide-svelte';
 	import Crisis from './crisis.svelte';
 	import { cn } from '$lib/utils';
 	import Chat from './chat.svelte';
@@ -33,6 +33,7 @@
 		<MessageSquare class={cn('hover:stroke-white', activeTab === 'chat' && 'stroke-white')} />
 	</button>
 </div>
+
 {#if activeTab === 'crisis'}
 	<Crisis {emergency} />
 {/if}

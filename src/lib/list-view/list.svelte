@@ -9,35 +9,23 @@
 	import { Input } from '$lib/components/ui/input';
 	import * as Dialog from '$lib/components/ui/dialog';
 	import Container from '$lib/crisis/container.svelte';
+	import { Progress } from '$lib/components/ui/progress';
 
 	let selectedCrisis = $state(emergencies[0]);
 </script>
 
 <div class="space-y-8">
-	<Dialog.Root>
-		<Dialog.Trigger
-			>{`Ask a question about the ${selectedCrisis.crisis} in ${selectedCrisis.location}`}</Dialog.Trigger
-		>
-		<Dialog.Content>
-			<Dialog.Header>
-				<Dialog.Title>Are you sure absolutely sure?</Dialog.Title>
-				<Dialog.Description>
-					This action cannot be undone. This will permanently delete your account and remove your
-					data from our servers.
-				</Dialog.Description>
-			</Dialog.Header>
-		</Dialog.Content>
-	</Dialog.Root>
-
 	<Resizable.PaneGroup direction="horizontal" class="min-h-[200px] rounded-lg border">
 		<Resizable.Pane defaultSize={60}>
-			<Table.Root>
-				<Table.Header>
+			<Table.Root class="m-0">
+				<Table.Header class="bg-muted">
 					<Table.Row>
-						<Table.Head>Crisis</Table.Head>
-						<Table.Head>Location</Table.Head>
-						<Table.Head>Aid Resources Required</Table.Head>
-						<Table.Head>Description</Table.Head>
+						<Table.Head class="py-4">Priority</Table.Head>
+						<Table.Head class="py-4">Crisis</Table.Head>
+						<Table.Head class="py-4">Affected</Table.Head>
+						<Table.Head class="py-4">Location</Table.Head>
+						<Table.Head class="py-4">Progress</Table.Head>
+						<Table.Head class="py-4">Description</Table.Head>
 					</Table.Row>
 				</Table.Header>
 				<Table.Body>
@@ -50,32 +38,27 @@
 							}}
 						>
 							<Table.Cell>
+								<img src={e.priority} alt="priority" class="m-0 size-6 min-w-6 object-contain" />
+							</Table.Cell>
+							<Table.Cell>
 								<div class="flex flex-col gap-2">
 									<div class="flex items-center gap-2">
-										<span
-											><img
-												src={e.priority}
-												alt="priority"
-												class="m-0 size-6 min-w-6 object-contain"
-											/></span
-										>
 										<span>
 											<Badge crisis={e.crisis} />
 										</span>
 									</div>
-									<span class="flex items-center gap-1">
-										<UsersRound class="size-4" />
-										{e.numPeople}
-									</span>
 								</div></Table.Cell
 							>
+
+							<Table.Cell class="font-medium">
+								<span class="flex items-center gap-1">
+									<UsersRound class="size-4" />
+									{e.numPeople}
+								</span>
+							</Table.Cell>
 							<Table.Cell class="font-medium">{e.location}</Table.Cell>
 							<Table.Cell>
-								<div class="flex gap-2">
-									{#each e.aidResources as aid}
-										<AidBadge {aid} />
-									{/each}
-								</div>
+								<Progress value={e.progress} />
 							</Table.Cell>
 							<Table.Cell>{e.description}</Table.Cell>
 						</Table.Row>
