@@ -21,7 +21,7 @@ export const emergencies: Emergency[] = [
 		location: 'Valencia',
 		name: 'Flood in Valencia',
 		priority: '/p3.png',
-		numPeople: 9001,
+		numPeople: 13952,
 		progress: 65,
 		aidResources: ['electricity', 'food', 'medical', 'water', 'blankets'],
 		agency: 'Police',
