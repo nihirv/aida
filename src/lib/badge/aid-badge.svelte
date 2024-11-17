@@ -7,7 +7,8 @@
 		food: '#4ade80',
 		water: '#60a5fa',
 		medical: '#f87171',
-		transport: '#a8a29e'
+		transport: '#a8a29e',
+		blankets: '#94a3b8'
 	};
 	export let aid: keyof typeof map;
 </script>

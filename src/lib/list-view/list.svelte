@@ -8,6 +8,7 @@
 	import AidBadge from '$lib/badge/aid-badge.svelte';
 	import { Input } from '$lib/components/ui/input';
 	import * as Dialog from '$lib/components/ui/dialog';
+	import Container from '$lib/crisis/container.svelte';
 
 	let selectedCrisis = $state(emergencies[0]);
 </script>
@@ -84,7 +85,7 @@
 		</Resizable.Pane>
 		<Resizable.Handle withHandle />
 		<Resizable.Pane defaultSize={40}>
-			<Crisis emergency={selectedCrisis} />
+			<Container emergency={selectedCrisis} />
 		</Resizable.Pane>
 	</Resizable.PaneGroup>
 </div>

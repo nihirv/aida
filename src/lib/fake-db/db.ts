@@ -17,11 +17,11 @@ export const emergencies: Emergency[] = [
 	{
 		id: 'flood-in-spain',
 		crisis: 'Flood',
-		location: 'Spain',
-		name: 'Flood in Spain',
+		location: 'Valencia',
+		name: 'Flood in Valencia',
 		priority: '/p2.png',
 		numPeople: 9001,
-		aidResources: ['shelter', 'electricity', 'food'],
+		aidResources: ['shelter', 'electricity', 'food', 'medical'],
 		agency: 'Police',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
