@@ -60,7 +60,7 @@
 							<Table.Cell>
 								<Progress value={e.progress} />
 							</Table.Cell>
-							<Table.Cell>{e.description}</Table.Cell>
+							<Table.Cell><div class="line-clamp-2">{e.description}</div></Table.Cell>
 						</Table.Row>
 					{/each}
 				</Table.Body>

@@ -34,6 +34,7 @@
 	},
 	"dependencies": {
 		"@tailwindcss/typography": "^0.5.15",
+		"chart.js": "^4.4.6",
 		"photoswipe": "^5.4.4"
 	}
 }

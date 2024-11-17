@@ -9,6 +9,8 @@
 	import AidBadge from '$lib/badge/aid-badge.svelte';
 	import Timeline from './timeline.svelte';
 	import Map from './map.svelte';
+	import BarChart from './bar-chart.svelte';
+	import * as Tabs from '$lib/components/ui/tabs';
 
 	export let emergency: Emergency;
 	let galleryDiv: HTMLDivElement;
@@ -43,16 +45,28 @@
 			{emergency.numPeople}
 		</span>
 	</div>
-	<div class="my-4 flex gap-2">
-		{#each emergency.aidResources as aid}
-			<AidBadge {aid} />
-		{/each}
+
+	<div>
+		<h3>People's Requests for Aid</h3>
+		<BarChart />
 	</div>
+
 	<div>{emergency.description}</div>
 
-	<Map />
+	<Tabs.Root value="map">
+		<Tabs.List>
+			<Tabs.Trigger value="map">Aid Requests</Tabs.Trigger>
+			<Tabs.Trigger value="safe-zone">Safety Zones</Tabs.Trigger>
+		</Tabs.List>
+		<Tabs.Content value="map">
+			<Map />
+		</Tabs.Content>
+		<Tabs.Content value="safe-zone">
+			<img
+				src="https://media.discordapp.net/attachments/1307258455748378684/1307676986159796264/Screenshot_2024-11-17_at_12.01.09.png?ex=673b2c98&is=6739db18&hm=f2213afc7578e6b151fb2702934189441aaa8b1c0f158660653b15354ffa6ea0&=&format=webp&quality=lossless&width=840&height=934"
+			/>
+		</Tabs.Content>
+	</Tabs.Root>
 
 	<Timeline {emergency} />
-
-	<h3>People's Requests for Aid</h3>
 </div>

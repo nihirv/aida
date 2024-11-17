@@ -25,7 +25,7 @@
 			<div class="rounded-lg bg-white p-4 shadow-sm dark:border-gray-600 dark:bg-gray-700">
 				<div class="mb-3 items-center justify-between sm:flex">
 					<time class="mb-1 text-xs font-normal text-gray-400 sm:order-last sm:mb-0"
-						>2 hours ago</time
+						>17 mins ago</time
 					>
 					<div class="lex text-sm font-normal text-gray-500 dark:text-gray-300">
 						Yvonne from <a
@@ -40,8 +40,10 @@
 					class="rounded-lg bg-gray-50 p-3 text-xs font-normal italic text-gray-500 dark:border-gray-500 dark:bg-gray-600 dark:text-gray-300"
 				>
 					We’ve gathered a few survivors in a nearby shelter, but we don’t have enough supplies.
-					Cars are flooded here so we have no transport out. Can someone send clean drinking water
-					and basic medical kits here urgently?
+					Cars are flooded here so we have no transport out. Can someone send clean drinking <b
+						>water</b
+					>
+					and basic <b>medical kits</b> here urgently?
 				</div>
 				<div>
 					<img src="/spain-flood/spain_flood3.png" class="rounded-lg" />
@@ -53,7 +55,7 @@
 			<div class="rounded-lg bg-white p-4 shadow-sm dark:border-gray-600 dark:bg-gray-700">
 				<div class="mb-3 items-center justify-between sm:flex">
 					<time class="mb-1 text-xs font-normal text-gray-400 sm:order-last sm:mb-0"
-						>2 hours ago</time
+						>25 minutes ago</time
 					>
 					<div class="lex text-sm font-normal text-gray-500 dark:text-gray-300">
 						Xaiver from <a
@@ -66,8 +68,8 @@
 				<div
 					class="rounded-lg bg-gray-50 p-3 text-xs font-normal italic text-gray-500 dark:border-gray-500 dark:bg-gray-600 dark:text-gray-300"
 				>
-					I’m alone, and the power is out. I don’t have enough medication or food to last much
-					longer. Please, can someone come and check on us here?
+					I’m alone, and the <b>power is out</b>. I don’t have enough <b>medication</b> or
+					<b>food</b> to last much longer. Please, can someone come and check on us here?
 				</div>
 				<div>
 					<img src="/spain-flood/spain_flood2.jpg" class="rounded-lg" />
@@ -79,7 +81,7 @@
 			<div class="rounded-lg bg-white p-4 shadow-sm dark:border-gray-600 dark:bg-gray-700">
 				<div class="mb-3 items-center justify-between sm:flex">
 					<time class="mb-1 text-xs font-normal text-gray-400 sm:order-last sm:mb-0"
-						>2 hours ago</time
+						>50 minutes ago</time
 					>
 					<div class="lex text-sm font-normal text-gray-500 dark:text-gray-300">
 						Earl from <a
@@ -92,8 +94,9 @@
 				<div
 					class="rounded-lg bg-gray-50 p-3 text-xs font-normal italic text-gray-500 dark:border-gray-500 dark:bg-gray-600 dark:text-gray-300"
 				>
-					The bridge near us has collapsed, and we’re stranded. We need food, clean water, and
-					blankets for the kids. Can someone help us get supplies?
+					The bridge near us has collapsed, and we’re stranded. We need <b>food</b>, clean
+					<b>water</b>, and
+					<b>blankets</b> for the kids. Can someone help us get supplies?
 				</div>
 				<div>
 					<img src="/spain-flood/spain_flood1.png" class="rounded-lg" />
@@ -105,7 +108,7 @@
 			<div class="rounded-lg bg-white p-4 shadow-sm dark:border-gray-600 dark:bg-gray-700">
 				<div class="mb-3 items-center justify-between sm:flex">
 					<time class="mb-1 text-xs font-normal text-gray-400 sm:order-last sm:mb-0"
-						>2 hours ago</time
+						>90 minutes ago</time
 					>
 					<div class="lex text-sm font-normal text-gray-500 dark:text-gray-300">
 						Simone from <a
@@ -118,7 +121,7 @@
 					class="rounded-lg bg-gray-50 p-3 text-xs font-normal italic text-gray-500 dark:border-gray-500 dark:bg-gray-600 dark:text-gray-300"
 				>
 					Our home is completely cut off. We need immediate evacuation assistance, especially for my
-					elderly parents who can’t walk long distances. Please send boats or rescue teams!
+					elderly parents who can’t walk long distances. Please send <b>boats</b> or <b>rescue</b> teams!
 				</div>
 			</div>
 		</li>
@@ -142,7 +145,7 @@
 								target="_blank"
 							>
 								<div>
-									<img src={imageObj.imageUrl} alt="emergency" class="mt-1 size-28 rounded" />
+									<img src={imageObj.imageUrl} alt="emergency" class="mt-1 size-96 rounded" />
 								</div>
 							</a>
 						{/each}
@@ -153,7 +156,7 @@
 		<li class="mb-10 ms-2">
 			<div class="rounded-lg bg-white p-4 shadow-sm dark:border-gray-600 dark:bg-gray-700">
 				<div class="items-center justify-between sm:flex">
-					<time class="text-xs font-normal text-gray-400 sm:order-last sm:mb-0">2 hours ago</time>
+					<time class="text-xs font-normal text-gray-400 sm:order-last sm:mb-0">24 hours ago</time>
 					<div class="lex text-sm font-normal text-gray-500 dark:text-gray-300">
 						Normal Activity
 					</div>

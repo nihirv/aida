@@ -23,10 +23,10 @@ export const emergencies: Emergency[] = [
 		priority: '/p3.png',
 		numPeople: 9001,
 		progress: 65,
-		aidResources: ['shelter', 'electricity', 'food', 'medical'],
+		aidResources: ['electricity', 'food', 'medical', 'water', 'blankets'],
 		agency: 'Police',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+			'Aid workers should prioritize delivering essential supplies, including medication, food, clean water, and blankets, to stranded residents in the west part of the city, where the floodwaters have subsided and the wind has slowed down, while also providing immediate medical attention to those in need, such as the injured husband in the second commentary.',
 		latestImages: [
 			{
 				imageUrl: '/flood.webp',
@@ -82,15 +82,15 @@ export const emergencies: Emergency[] = [
 	{
 		id: 'flood-in-spain',
 		crisis: 'Conflict',
-		location: 'Palenstine',
-		name: 'Conflict in Palenstine',
+		location: 'Ukraine',
+		name: 'Conflict in Ukraine',
 		priority: '/p3.png',
 		numPeople: 524368,
 		progress: 13,
 		aidResources: ['shelter', 'electricity', 'food', 'medical'],
 		agency: 'Police',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+			'Aid workers should prioritize providing emergency medical assistance to the injured, delivering food, water, and medicines to densely populated shelters, and clearing unexploded ordnance from the streets to ensure safe evacuation routes, particularly in the urban area where a large explosion has caused significant damage.',
 		latestImages: [
 			{
 				imageUrl: '/flood.webp',
@@ -154,7 +154,7 @@ export const emergencies: Emergency[] = [
 		progress: 47,
 		agency: 'Police',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+			'Evacuation centers are needed in the affected neighborhoods, with priority on providing information on safe evacuation routes, distributing masks and air purifiers, and conducting rescue operations to check on areas left behind, particularly for those who evacuated with pets or elderly neighbors.',
 		latestImages: [
 			{
 				imageUrl: '/flood.webp',
@@ -210,15 +210,15 @@ export const emergencies: Emergency[] = [
 	{
 		id: 'flood-in-spain',
 		crisis: 'Earthquake',
-		location: 'New Zealand',
-		name: 'Earthquake in New Zealand',
+		location: 'Turkey',
+		name: 'Earthquake in Turkey',
 		progress: 82,
 		priority: '/p1.png',
-		numPeople: 524368,
+		numPeople: 24123,
 		aidResources: ['shelter', 'electricity', 'food', 'medical'],
 		agency: 'Police',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+			'Rescue teams should prioritize immediate assistance to areas with trapped survivors, such as the location of the collapsed building, and provide medical aid to injured individuals, particularly those in the vicinity of the destroyed buildings in the city center.',
 		latestImages: [
 			{
 				imageUrl: '/flood.webp',
